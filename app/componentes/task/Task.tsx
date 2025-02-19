@@ -43,7 +43,7 @@ export default function Task({taskData}: TaskProps) {
                             <input type="checkbox" onChange={() => setIsDone(!isDone)} name="task-check" />
                             <p className={isDone ? ('line-through') : ''}>{taskData.title}</p>
                             <button className="bg-blue-300 px-2 py-1 rounded" onClick={() => setIsEditing(true)}><FaRegEdit /></button>
-                            <button className="bg-red-500 px-2 py-1 rounded" onClick={() => dispatch(removeTask(taskData.id))}><FaRegTrashAlt className="text-white-500"/></button>
+                            <button className="bg-red-500 px-2 py-1 rounded" onClick={() => dispatch(removeTask(taskData.id))}><FaRegTrashAlt /></button>
                         </>
                     )
                 }
