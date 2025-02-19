@@ -24,10 +24,15 @@ export default function AddImage() {
         formData.append("image", selectedFile);
         formData.append("alt", data.alt);
 
-        const newImageGallery = await uploadFile(formData);
-        dispatch(addImage(newImageGallery));
-        reset()
-        setPreview(null);
+        try {
+            const newImageGallery = await uploadFile(formData);
+            dispatch(addImage(newImageGallery));
+        } catch (error) {
+            alert("Erro ao enviar a imagem: " + error);
+        } finally {
+            reset();
+            setPreview(null);
+        }
     }
 
     function handleFileChange(event: React.ChangeEvent<HTMLInputElement>) {
