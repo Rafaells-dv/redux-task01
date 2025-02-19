@@ -29,6 +29,7 @@ export default function AddImage() {
             dispatch(addImage(newImageGallery));
         } catch (error) {
             alert("Erro ao enviar a imagem!");
+            console.error(error);
         } finally {
             reset();
             setPreview(null);
