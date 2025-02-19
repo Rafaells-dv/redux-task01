@@ -28,7 +28,7 @@ export default function AddImage() {
             const newImageGallery = await uploadFile(formData);
             dispatch(addImage(newImageGallery));
         } catch (error) {
-            alert("Erro ao enviar a imagem: " + error);
+            alert("Erro ao enviar a imagem!");
         } finally {
             reset();
             setPreview(null);
