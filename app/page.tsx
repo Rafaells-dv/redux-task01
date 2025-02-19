@@ -1,4 +1,5 @@
 import Counter from "./componentes/counter/Counter";
+import TodoContainer from "./componentes/todoContainer/TodoContainer";
 import Inicio from "./inicio/page";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <section className="container">
         <Inicio/>
         <Counter />
+        <TodoContainer />
       </section>
     </>
   );
