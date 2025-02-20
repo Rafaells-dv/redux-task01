@@ -32,7 +32,7 @@ export default function Board() {
     return(
         <>
             <div className="grid grid-cols-3 gap-3 min-h-[400px] w-full">
-            {Object.values(Categoria).filter(value => isNaN(Number(value))).map((categoria, index) => (
+            {Object.values(Categoria).map((categoria, index) => (
                 <div 
                     key={index}
                     className="w-100 border border-black rounded p-5 pt-3 flex flex-col gap-2 min-h-[300px]"
