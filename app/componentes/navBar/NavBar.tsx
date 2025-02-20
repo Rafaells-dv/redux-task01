@@ -8,7 +8,7 @@ export default function NavBar() {
         <TextoLink texto="Home" href="/" />
         <TextoLink texto="Galeria" href="/galeria" />
         <TextoLink texto="Comprar" href="/loja" />
-        <TextoLink texto="Documentos" href="/documents" />             
+        <TextoLink texto="Documentos" href="/documentos" />             
       </nav>
     </>
   );
